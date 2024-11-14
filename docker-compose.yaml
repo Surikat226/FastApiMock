@@ -1,0 +1,9 @@
+services:
+  service_db:
+    container_name: service_db
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=surikat
+      - POSTGRES_PASSWORD=88005553535
+    image: postgres:14.13-alpine
