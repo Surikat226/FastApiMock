@@ -4,6 +4,7 @@ services:
       dockerfile: Dockerfile
       context: .
     ports:
+    # маппим порты таким образом, потому что по дефолту аппка работает на порте 8000
       - "8000:8000"
       
   service_db:
